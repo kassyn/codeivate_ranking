@@ -1,0 +1,150 @@
+/* line 1, assets/stylesheets/layout/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, assets/stylesheets/layout/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 14, assets/stylesheets/layout/_reset.scss */
+after, hgroup:after, nav:after, footer:after, header:after, section:after, div:after, ol:after, ul:after, li:after, dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 23, assets/stylesheets/layout/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 26, assets/stylesheets/layout/_reset.scss */
+ul,
+ol {
+  list-style: none;
+  list-style-position: outside;
+}
+
+/* line 32, assets/stylesheets/layout/_reset.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* line 1, assets/stylesheets/layout/_main.scss */
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
+}
+
+/* line 1, assets/stylesheets/layout/_header.scss */
+.header {
+  background: #222;
+  color: orange;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* line 1, assets/stylesheets/layout/_item_profile.scss */
+.item-profile {
+  border-bottom: 2px solid #eee;
+  padding: 40px 0;
+}
+/* line 5, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .avatar img {
+  border-radius: 100%;
+  box-shadow: 0 0 0 10px #fff, 0 0 0 11px #eee;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+/* line 13, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .info {
+  overflow: hidden;
+}
+/* line 17, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .name {
+  font: 22px/1 sans-serif;
+  margin-bottom: 10px;
+}
+/* line 22, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .level {
+  border-right: 1px solid #eee;
+  float: left;
+  font-size: 22px;
+  line-height: 100px;
+  height: 100px;
+  overflow: hidden;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+/* line 33, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .progress-bar {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* line 38, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .progress-bar .progress {
+  background: orange;
+  display: inline-block;
+  padding: 5px 10px;
+}
+/* line 45, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .list {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+/* line 49, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .list .item {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px;
+}
+/* line 54, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .list .item:first-child {
+  margin-left: 0;
+}
+/* line 59, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .list .item span {
+  background: orange;
+  border-radius: 100%;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 20px;
+}
+
+/* line 1, assets/stylesheets/layout/_footer.scss */
+.footer {
+  background: #222;
+  text-align: center;
+}
+
+/* line 3, assets/stylesheets/layout/_about_team.scss */
+.about-team .member {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* line 8, assets/stylesheets/layout/_about_team.scss */
+.about-team .avatar-creator {
+  border-radius: 100%;
+  overflow: hidden;
+}
+/* line 13, assets/stylesheets/layout/_about_team.scss */
+.about-team .name {
+  display: block;
+}

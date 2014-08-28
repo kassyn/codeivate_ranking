@@ -1,0 +1,16 @@
+.about-team {
+
+	.member {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.avatar-creator {
+		border-radius: 100%;
+		overflow: hidden;
+	}
+
+	.name {
+		display: block;
+	}
+}

@@ -1,0 +1,69 @@
+.item-profile {
+	border-bottom: 2px solid #eee;
+	padding: 40px 0;
+
+	.avatar img {
+		border-radius: 100%;
+		box-shadow: 0 0 0 10px #fff, 0 0 0 11px #eee;
+		display: block;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.info {
+		overflow: hidden;
+	}
+
+	.name {
+		font: 22px/1 sans-serif;
+		margin-bottom: 10px;
+	}
+
+	.level {
+		border-right: 1px solid #eee;
+		float: left;
+		font-size: 22px;
+		line-height: 100px;
+		height: 100px;
+		overflow: hidden;
+		padding-right: 20px;
+		margin-right: 20px;
+	}
+
+	.progress-bar {
+		background: #eee;
+		border-radius: 10px;
+		overflow: hidden;
+
+		.progress {
+			background: orange;
+			display: inline-block;
+			padding: 5px 10px;
+		}
+	}
+
+	.list {
+		margin-top: 10px;
+		text-transform: uppercase;
+
+		.item {
+			display: inline-block;
+			margin-left: 20px;
+			padding: 5px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		.item span {
+			background: orange;
+			border-radius: 100%;
+			display: inline-block;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			width: 20px;
+		}
+	}
+}
