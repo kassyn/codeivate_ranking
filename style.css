@@ -43,6 +43,11 @@ body {
 }
 
 /* line 1, assets/stylesheets/layout/_main.scss */
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+/* line 5, assets/stylesheets/layout/_main.scss */
 .container {
   margin: 0 auto;
   padding: 0 40px;
@@ -52,12 +57,29 @@ body {
 /* line 1, assets/stylesheets/layout/_header.scss */
 .header {
   background: url('assets/images/bg.png') no-repeat center top/100% auto;
+  padding: 25px 0 20px;
+}
+/* line 5, assets/stylesheets/layout/_header.scss */
+.header .title-header {
   color: #fff;
   font-size: 16px;
   line-height: 1;
-  padding: 25px 0 20px;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
   text-transform: uppercase;
+  position: relative;
+  top: 6px;
+}
+/* line 15, assets/stylesheets/layout/_header.scss */
+.header .icon-medal {
+  float: left;
+  margin-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 10px;
+}
+/* line 21, assets/stylesheets/layout/_header.scss */
+.header .icon-medal svg {
+  position: relative;
+  top: 2px;
 }
 
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
