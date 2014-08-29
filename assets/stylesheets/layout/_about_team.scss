@@ -1,6 +1,7 @@
 .about-team {
 
 	.member {
+		color: #fff;
 		display: inline-block;
 		margin: 0 10px;
 	}
@@ -12,5 +13,7 @@
 
 	.name {
 		display: block;
+		font-weight: normal;
+		font-size: 12px;
 	}
 }

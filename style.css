@@ -63,12 +63,12 @@ body {
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
 .item-profile {
   border-bottom: 2px solid #eee;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 /* line 5, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .avatar img {
   border-radius: 100%;
-  box-shadow: 0 0 0 10px #fff, 0 0 0 11px #eee;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #eee;
   display: block;
   float: left;
   margin-right: 20px;
@@ -135,19 +135,23 @@ body {
 .footer {
   background: #222;
   text-align: center;
+  padding: 20px 0;
 }
 
 /* line 3, assets/stylesheets/layout/_about_team.scss */
 .about-team .member {
+  color: #fff;
   display: inline-block;
   margin: 0 10px;
 }
-/* line 8, assets/stylesheets/layout/_about_team.scss */
+/* line 9, assets/stylesheets/layout/_about_team.scss */
 .about-team .avatar-creator {
   border-radius: 100%;
   overflow: hidden;
 }
-/* line 13, assets/stylesheets/layout/_about_team.scss */
+/* line 14, assets/stylesheets/layout/_about_team.scss */
 .about-team .name {
   display: block;
+  font-weight: normal;
+  font-size: 12px;
 }
