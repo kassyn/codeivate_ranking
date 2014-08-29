@@ -43,6 +43,11 @@ body {
 }
 
 /* line 1, assets/stylesheets/layout/_main.scss */
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+/* line 5, assets/stylesheets/layout/_main.scss */
 .container {
   margin: 0 auto;
   padding: 0 40px;
@@ -52,23 +57,40 @@ body {
 /* line 1, assets/stylesheets/layout/_header.scss */
 .header {
   background: url('assets/images/bg.png') no-repeat center top/100% auto;
+  padding: 25px 0 20px;
+}
+/* line 5, assets/stylesheets/layout/_header.scss */
+.header .title-header {
   color: #fff;
   font-size: 16px;
   line-height: 1;
-  padding: 25px 0 20px;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
   text-transform: uppercase;
+  position: relative;
+  top: 6px;
+}
+/* line 15, assets/stylesheets/layout/_header.scss */
+.header .icon-medal {
+  float: left;
+  margin-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 10px;
+}
+/* line 21, assets/stylesheets/layout/_header.scss */
+.header .icon-medal svg {
+  position: relative;
+  top: 2px;
 }
 
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
 .item-profile {
   border-bottom: 2px solid #eee;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 /* line 5, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .avatar img {
   border-radius: 100%;
-  box-shadow: 0 0 0 10px #fff, 0 0 0 11px #eee;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #eee;
   display: block;
   float: left;
   margin-right: 20px;
@@ -135,19 +157,23 @@ body {
 .footer {
   background: #222;
   text-align: center;
+  padding: 20px 0;
 }
 
 /* line 3, assets/stylesheets/layout/_about_team.scss */
 .about-team .member {
+  color: #fff;
   display: inline-block;
   margin: 0 10px;
 }
-/* line 8, assets/stylesheets/layout/_about_team.scss */
+/* line 9, assets/stylesheets/layout/_about_team.scss */
 .about-team .avatar-creator {
   border-radius: 100%;
   overflow: hidden;
 }
-/* line 13, assets/stylesheets/layout/_about_team.scss */
+/* line 14, assets/stylesheets/layout/_about_team.scss */
 .about-team .name {
   display: block;
+  font-weight: normal;
+  font-size: 12px;
 }
