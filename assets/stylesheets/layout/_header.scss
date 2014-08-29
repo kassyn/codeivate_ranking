@@ -1,6 +1,9 @@
 .header {
-	background: #222;
-	color: orange;
-	font-size: 30px;
+	background: image-url( 'bg.png', false, false ) no-repeat center top / 100% auto;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	padding: 25px 0 20px;
+	text-shadow: 0 2px 0 rgba( #000, .2 );
 	text-transform: uppercase;
 }

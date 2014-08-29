@@ -5,8 +5,8 @@
   border: 0;
   text-decoration: none;
   outline: none;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-/* line 26, assets/stylesheets/layout/_reset.scss */
+/* line 25, assets/stylesheets/layout/_reset.scss */
 ul,
 ol {
   list-style: none;
@@ -45,15 +45,18 @@ body {
 /* line 1, assets/stylesheets/layout/_main.scss */
 .container {
   margin: 0 auto;
-  padding: 40px;
+  padding: 0 40px;
   width: 80%;
 }
 
 /* line 1, assets/stylesheets/layout/_header.scss */
 .header {
-  background: #222;
-  color: orange;
-  font-size: 30px;
+  background: url('assets/images/bg.png') no-repeat center top/100% auto;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  padding: 25px 0 20px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 
