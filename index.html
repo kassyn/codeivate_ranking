@@ -40,7 +40,7 @@
 			<figure class="avatar">
 				<img src="http://avatars.io/email/{{email}}?size=medium" alt="{{name}}">
 			</figure>
-			<span class="level">Level {{level}}</span>
+			<span class="level">Level {{floor_value level}}</span>
 			<div class="info">
 				<h3 class="name">{{name}}</h3>
 				<div class="progress-bar">
@@ -48,7 +48,7 @@
 				</div>
 				<ul class="list">
 					{{#each languages}}
-					<li class="item">{{@key}} <span>{{level}}</span></li>
+					<li class="item">{{@key}} <span>{{floor_value level}}</span></li>
 					{{/each}}
 				</ul>
 			</div>
@@ -64,7 +64,8 @@
 	
 	<!-- app -->
 	<script src="assets/javascripts/app/application.js"></script>
-	<script src="assets/javascripts/app/user.js"></script>
+	<script src="assets/javascripts/app/controller-ranking.js"></script>
+	<script src="assets/javascripts/app/model-user.js"></script>
 	<script src="assets/javascripts/boot.js"></script>
 </body>
 </html>
