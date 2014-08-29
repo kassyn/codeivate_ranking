@@ -19,7 +19,7 @@ Module('JEDAI.User', function(User) {
 	};
 
 	User.fn.getLevel = function() {
-		return parseInt( this.level );
+		return parseFloat( this.level );
 	};
 
 	User.fn.getPercentageNextLevel = function() {
