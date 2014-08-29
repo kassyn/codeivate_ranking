@@ -22,6 +22,10 @@ Module('JEDAI.User', function(User) {
 		return parseInt( this.level );
 	};
 
+	User.fn.getPercentageNextLevel = function() {
+		return String( this.level ).replace( /.+\./, '' );
+	};
+
 	User.fn._onSuccessAjax = function(resolve, data) {
 		this._assign( data );
 		resolve( this );
