@@ -85,8 +85,10 @@ body {
 /* line 28, assets/stylesheets/layout/_header.scss */
 .header .buttons-git {
   float: right;
+  position: relative;
+  top: 5px;
 }
-/* line 31, assets/stylesheets/layout/_header.scss */
+/* line 33, assets/stylesheets/layout/_header.scss */
 .header .buttons-git iframe {
   margin-left: 10px;
 }
