@@ -63,51 +63,66 @@ body {
 .header .title-header {
   color: #fff;
   font-size: 16px;
+  float: left;
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
   top: 6px;
 }
-/* line 15, assets/stylesheets/layout/_header.scss */
+/* line 16, assets/stylesheets/layout/_header.scss */
 .header .icon-medal {
   float: left;
   margin-right: 15px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding-right: 10px;
 }
-/* line 21, assets/stylesheets/layout/_header.scss */
+/* line 22, assets/stylesheets/layout/_header.scss */
 .header .icon-medal svg {
   position: relative;
   top: 2px;
 }
+/* line 28, assets/stylesheets/layout/_header.scss */
+.header .buttons-git {
+  float: right;
+}
+/* line 31, assets/stylesheets/layout/_header.scss */
+.header .buttons-git iframe {
+  margin-left: 10px;
+}
 
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
 .item-profile {
-  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
   padding: 20px 0 10px;
 }
 /* line 5, assets/stylesheets/layout/_item_profile.scss */
+.item-profile:first-child {
+  border-top: none;
+}
+/* line 9, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .avatar img {
   border-radius: 100%;
   box-shadow: 0 0 0 5px #fff, 0 0 0 6px #eee;
   display: block;
   float: left;
   margin-right: 20px;
-  width: 50px;
+  width: 60px;
 }
-/* line 14, assets/stylesheets/layout/_item_profile.scss */
+/* line 18, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .info {
   overflow: hidden;
 }
-/* line 18, assets/stylesheets/layout/_item_profile.scss */
+/* line 22, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .name {
+  color: #464e7c;
   font: bold 12px/1 sans-serif;
   margin-bottom: 10px;
 }
-/* line 23, assets/stylesheets/layout/_item_profile.scss */
+/* line 28, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .level {
   border-right: 1px solid #eee;
+  color: #464e7c;
   float: left;
   font-size: 22px;
   line-height: 60px;
@@ -116,7 +131,7 @@ body {
   padding-right: 20px;
   margin-right: 20px;
 }
-/* line 34, assets/stylesheets/layout/_item_profile.scss */
+/* line 40, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .progress-bar {
   background: #eee;
   border-radius: 10px;
@@ -124,29 +139,29 @@ body {
   font-size: 10px;
   overflow: hidden;
 }
-/* line 41, assets/stylesheets/layout/_item_profile.scss */
+/* line 47, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .progress-bar .progress {
   background: #464e7c;
   display: inline-block;
   padding: 2px 10px;
 }
-/* line 48, assets/stylesheets/layout/_item_profile.scss */
+/* line 54, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list {
   margin-top: 5px;
   font-size: 10px;
   text-transform: uppercase;
 }
-/* line 53, assets/stylesheets/layout/_item_profile.scss */
+/* line 59, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item {
   display: inline-block;
   margin-left: 10px;
   padding: 5px;
 }
-/* line 58, assets/stylesheets/layout/_item_profile.scss */
+/* line 64, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item:first-child {
   margin-left: 0;
 }
-/* line 62, assets/stylesheets/layout/_item_profile.scss */
+/* line 68, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item span {
   font-weight: bold;
   color: #464e7c;

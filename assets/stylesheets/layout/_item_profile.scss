@@ -1,6 +1,10 @@
 .item-profile {
-	border-bottom: 2px solid #eee;
+	border-top: 2px solid #eee;
 	padding: 20px 0 10px;
+
+	&:first-child {
+		border-top: none;
+	}
 
 	.avatar img {
 		border-radius: 100%;
@@ -8,7 +12,7 @@
 		display: block;
 		float: left;
 		margin-right: 20px;
-		width: 50px;
+		width: 60px;
 	}
 
 	.info {
@@ -16,12 +20,14 @@
 	}
 
 	.name {
+		color: #464e7c;
 		font: bold 12px/1 sans-serif;
 		margin-bottom: 10px;
 	}
 
 	.level {
 		border-right: 1px solid #eee;
+		color: #464e7c;
 		float: left;
 		font-size: 22px;
 		line-height: 60px;

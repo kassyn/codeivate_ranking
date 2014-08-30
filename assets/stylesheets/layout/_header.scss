@@ -5,6 +5,7 @@
 	.title-header {
 		color: #fff;
 		font-size: 16px;
+		float: left;
 		line-height: 1;
 		letter-spacing: 1px;
 		text-transform: uppercase;
@@ -21,6 +22,14 @@
 		svg {
 			position: relative;
 			top: 2px;
+		}
+	}
+
+	.buttons-git {
+		float: right;
+
+		iframe {
+			margin-left: 10px;
 		}
 	}
 }
