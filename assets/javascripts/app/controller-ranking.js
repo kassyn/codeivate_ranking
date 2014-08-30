@@ -1,4 +1,6 @@
 Module("JEDAI.Ranking", function(Ranking) {
+	Ranking.TIME_RELOAD = ( 1 * 60 * 1000 );
+
 	Ranking.fn.initialize = function(container, users) {
 		this.container = container;
 		this.users     = users;
@@ -10,7 +12,18 @@ Module("JEDAI.Ranking", function(Ranking) {
 		this._registerHelpers();
 		this._compileTemplate();
 		this.getUsersInService();
-	};	
+		this.setTimeReload();
+	};
+
+	Ranking.fn.setTimeReload = function() {
+		this.interval = setInterval(
+			(function() {
+				this.getUsersInService();
+				console.log( 'reload page #' + this.interval );
+			}).bind(this)
+		    , Ranking.TIME_RELOAD
+		);
+	};
 
 	Ranking.fn.clearTimeReload = function() {
 		clearInterval( this.interval );
