@@ -10,6 +10,13 @@
 </head>
 <body>
 
+	<style>
+		.progress {
+			-webkit-transition: width .6s ease-out;
+			transition: width .6s ease-out;
+		}
+	</style>
+
 	<div class="header">
 		<div class="container">
 			<div class="icon-medal">				
@@ -40,15 +47,15 @@
 
 	<script id="template-items-profile" type="text/x-handlebars-template">
 		{{#each this}}
-		<div class="item-profile">
+		<div class="item-profile" data-component-profile="{{getSanitizeText}}">
 			<figure class="avatar">
-				<img src="http://avatars.io/email/{{email}}?size=medium" alt="{{name}}">
+				<img src="http://avatars.io/email/{{email}}?size=medium" alt="gravatar ">
 			</figure>
 			<span class="level">Level {{floor_value level}}</span>
 			<div class="info">
 				<h3 class="name">{{name}}</h3>
 				<div class="progress-bar">
-					<span class="progress" style="width:{{getPercentageNextLevel}}%">{{getPercentageNextLevel}}%</span>
+					<span class="progress" data-percentage style="width: {{lastRenderPercentage}};">{{getPercentageNextLevel}}%</span>
 				</div>
 				<ul class="list">
 					{{#each languages}}
