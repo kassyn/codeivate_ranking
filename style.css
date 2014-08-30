@@ -155,24 +155,19 @@ body {
 /* line 1, assets/stylesheets/layout/_footer.scss */
 .footer {
   background: #222;
-  text-align: center;
+  margin-top: 40px;
   padding: 20px 0;
+  text-align: center;
 }
 
-/* line 3, assets/stylesheets/layout/_about_team.scss */
+/* line 1, assets/stylesheets/layout/_about_team.scss */
+.about-team {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+/* line 5, assets/stylesheets/layout/_about_team.scss */
 .about-team .member {
   color: #fff;
   display: inline-block;
-  margin: 0 10px;
-}
-/* line 9, assets/stylesheets/layout/_about_team.scss */
-.about-team .avatar-creator {
-  border-radius: 100%;
-  overflow: hidden;
-}
-/* line 14, assets/stylesheets/layout/_about_team.scss */
-.about-team .name {
-  display: block;
-  font-weight: normal;
-  font-size: 12px;
+  margin: 0 5px;
 }
