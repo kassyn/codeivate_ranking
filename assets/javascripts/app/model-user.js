@@ -1,5 +1,9 @@
 Module('JEDAI.User', function(User) {
 	User.fn.initialize = function(attrs) {
+		this.$el     = null;
+		this.profile = null;
+		this.name    = null;
+
 		this._assign( attrs );
 	};
 
@@ -22,6 +26,16 @@ Module('JEDAI.User', function(User) {
 		return parseFloat( this.level );
 	};
 
+	User.fn.getSanitizeText = function() {
+		return this.name.replace( /\s/g, '_' );
+	};
+
+	User.fn.renderPercentage = function() {
+		var finder = this.$el.byData( 'percentage' );
+
+		finder.width( finder.data( 'percentage' ) + '%' );
+	};
+
 	User.fn.getPercentageNextLevel = function() {
 		return String( this.level ).replace( /.+\./, '' );
 	};
@@ -33,5 +47,10 @@ Module('JEDAI.User', function(User) {
 
 	User.fn._assign = function(attrs) {
 		$.extend( this, attrs );
+	};
+
+	//easy find data-
+	$.fn.byData = function(attr) {
+		return this.find( "[data-" + attr + "]" );
 	};
 });
