@@ -12,6 +12,7 @@
 	<style>
 		.progress {
 			-webkit-transition: width .6s ease-out;
+			transition: width .6s ease-out;
 		}
 	</style>
 
@@ -54,7 +55,7 @@
 			<div class="info">
 				<h3 class="name">{{name}}</h3>
 				<div class="progress-bar">
-					<span class="progress" data-percentage="{{getPercentageNextLevel}}" style="width: 0;">{{getPercentageNextLevel}}%</span>
+					<span class="progress" data-percentage style="width: {{lastRenderPercentage}};">{{getPercentageNextLevel}}%</span>
 				</div>
 				<ul class="list">
 					{{#each languages}}

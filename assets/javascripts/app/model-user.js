@@ -1,8 +1,9 @@
 Module('JEDAI.User', function(User) {
 	User.fn.initialize = function(attrs) {
-		this.$el     = null;
-		this.profile = null;
-		this.name    = null;
+		this.$el                  = null;
+		this.profile              = null;
+		this.name                 = null;
+		this.lastRenderPercentage = 0;
 
 		this._assign( attrs );
 	};
@@ -31,13 +32,15 @@ Module('JEDAI.User', function(User) {
 	};
 
 	User.fn.renderPercentage = function() {
-		var finder = this.$el.byData( 'percentage' );
+		var finder     = this.$el.byData( 'percentage' );
+		var percentage = this.getPercentageNextLevel();
 
-		finder.width( finder.data( 'percentage' ) + '%' );
+		finder.width( percentage + '%' );
+		this.lastRenderPercentage = percentage;		
 	};
 
 	User.fn.getPercentageNextLevel = function() {
-		return String( this.level ).replace( /.+\./, '' );
+		return String( this.level ).replace( /.+\./, '' );		
 	};
 
 	User.fn._onSuccessAjax = function(resolve, data) {

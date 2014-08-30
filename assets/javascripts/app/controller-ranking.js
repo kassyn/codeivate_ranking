@@ -3,12 +3,18 @@ Module("JEDAI.Ranking", function(Ranking) {
 		this.container = container;
 		this.users     = users;
 		this.template  = null;
+		this.interval  = null;
 	};
 
 	Ranking.fn.init = function() {
 		this._registerHelpers();
 		this._compileTemplate();
 		this.getUsersInService();
+	};	
+
+	Ranking.fn.clearTimeReload = function() {
+		clearInterval( this.interval );
+		this.interval = null;
 	};
 
 	Ranking.fn.getUsersInService = function() {
