@@ -6,4 +6,9 @@ body {
 	margin: 0 auto;
 	padding: 0 40px;
 	width: 80%;
+
+	@include resp( mobile ) {
+		padding: 0 20px;
+		width: 100%;
+	}	
 }

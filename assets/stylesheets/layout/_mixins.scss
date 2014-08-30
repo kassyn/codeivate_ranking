@@ -1,0 +1,6 @@
+@mixin resp($media) {
+
+  @if $media == mobile {
+    @media (max-width: 768px) { @content; }
+  }
+}

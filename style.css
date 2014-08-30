@@ -53,6 +53,13 @@ body {
   padding: 0 40px;
   width: 80%;
 }
+@media (max-width: 768px) {
+  /* line 5, assets/stylesheets/layout/_main.scss */
+  .container {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
 
 /* line 1, assets/stylesheets/layout/_header.scss */
 .header {
@@ -91,6 +98,16 @@ body {
 /* line 33, assets/stylesheets/layout/_header.scss */
 .header .buttons-git iframe {
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  /* line 1, assets/stylesheets/layout/_header.scss */
+  .header {
+    background-size: cover;
+  }
+  /* line 41, assets/stylesheets/layout/_header.scss */
+  .header .buttons-git {
+    display: none;
+  }
 }
 
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
@@ -167,6 +184,18 @@ body {
 .item-profile .list .item span {
   font-weight: bold;
   color: #464e7c;
+}
+@media (max-width: 768px) {
+  /* line 77, assets/stylesheets/layout/_item_profile.scss */
+  .item-profile .list {
+    display: none;
+  }
+  /* line 81, assets/stylesheets/layout/_item_profile.scss */
+  .item-profile .level {
+    font-size: 14px;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* line 1, assets/stylesheets/layout/_footer.scss */
