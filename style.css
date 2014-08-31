@@ -61,6 +61,11 @@ body {
   }
 }
 
+/* line 16, assets/stylesheets/layout/_main.scss */
+.list-profile {
+  min-height: 600px;
+}
+
 /* line 1, assets/stylesheets/layout/_header.scss */
 .header {
   background: url('assets/images/bg.png') no-repeat center top/100% auto;
