@@ -28,6 +28,10 @@ Module('JEDAI.Application', function(Application) {
 			{
 				profile : 'Jhowl',
 				email   : 'jhonatan.souza@apiki.com'
+			},
+			{
+				profile : 'arisenna',
+				email   : 'arilton@apiki.com'
 			}			
 		];
 
