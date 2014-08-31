@@ -1,6 +1,6 @@
 .item-profile {
 	border-top: 2px solid #eee;
-	padding: 20px 0 10px;
+	padding: 20px 0;
 
 	&:first-child {
 		border-top: none;
@@ -11,6 +11,7 @@
 		box-shadow: 0 0 0 5px #fff, 0 0 0 6px #eee;
 		display: block;
 		float: left;
+		height: 60px;
 		margin-right: 20px;
 		width: 60px;
 	}
@@ -41,13 +42,24 @@
 		background: #eee;
 		border-radius: 10px;
 		color: #fff;
+		height: 15px;
 		font-size: 10px;
 		overflow: hidden;
+		position: relative;
 
 		.progress {
+			@include transition( width .6s ease-out );
 			background: #464e7c;
+			height: 15px;
 			display: inline-block;
-			padding: 2px 10px;
+		}
+
+		strong {
+			color: #fff;
+			left: 5px;
+			position: absolute;
+			text-shadow: 0 0 15px #000;
+			top: 1px;
 		}
 	}
 
@@ -59,7 +71,6 @@
 		.item {
 			display: inline-block;
 			margin-left: 10px;
-			padding: 5px;
 
 			&:first-child {
 				margin-left: 0;
