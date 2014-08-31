@@ -62,9 +62,4 @@ Module('JEDAI.User', function(User) {
 	User.fn._assign = function(attrs) {
 		$.extend( this, attrs );
 	};
-
-	//easy find data-
-	$.fn.byData = function(attr) {
-		return this.find( "[data-" + attr + "]" );
-	};
 });

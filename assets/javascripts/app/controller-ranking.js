@@ -92,9 +92,4 @@ Module('JEDAI.Ranking', function(Ranking) {
 	Ranking.FactoryUser = function(instance) {
 		return ( instance instanceof JEDAI.User ) ? instance : JEDAI.User( instance );		
 	};
-
-	//easy compile template
-	$.fn.compileHandlebars = function() {
-		return Handlebars.compile( this.html() );
-	};
 });
