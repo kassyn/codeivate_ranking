@@ -175,23 +175,22 @@ body {
 .item-profile .list .item {
   display: inline-block;
   margin-left: 10px;
-  padding: 5px;
 }
-/* line 65, assets/stylesheets/layout/_item_profile.scss */
+/* line 64, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item:first-child {
   margin-left: 0;
 }
-/* line 69, assets/stylesheets/layout/_item_profile.scss */
+/* line 68, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item span {
   font-weight: bold;
   color: #464e7c;
 }
 @media (max-width: 768px) {
-  /* line 78, assets/stylesheets/layout/_item_profile.scss */
+  /* line 77, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .list {
     display: none;
   }
-  /* line 82, assets/stylesheets/layout/_item_profile.scss */
+  /* line 81, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .level {
     font-size: 14px;
     margin-right: 10px;
