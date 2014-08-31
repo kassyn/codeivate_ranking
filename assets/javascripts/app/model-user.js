@@ -43,6 +43,17 @@ Module('JEDAI.User', function(User) {
 		return String( this.level ).replace( /.+\./, '' );		
 	};
 
+	User.fn.getLanguagesAvailable = function() {
+		var languages  = this.languages;
+		var availables = {};
+
+		for ( var attr in languages ) {
+			( Math.floor( languages[attr].level ) && ( availables[attr] = languages[attr] ) );
+		}
+				
+		return availables;
+	};
+
 	User.fn._onSuccessAjax = function(resolve, data) {
 		this._assign( data );
 		resolve( this );

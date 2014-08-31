@@ -58,8 +58,8 @@
 					<span class="progress" data-percentage style="width: {{lastRenderPercentage}};">{{getPercentageNextLevel}}%</span>
 				</div>
 				<ul class="list">
-					{{#each languages}}
-					<li class="item">{{@key}} <span>{{floor_value level}}</span></li>
+					{{#each getLanguagesAvailable}}
+						<li class="item">{{@key}} <span>{{floor_value level}}</span></li>
 					{{/each}}
 				</ul>
 			</div>
