@@ -113,7 +113,7 @@ body {
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
 .item-profile {
   border-top: 2px solid #eee;
-  padding: 20px 0 10px;
+  padding: 20px 0;
 }
 /* line 5, assets/stylesheets/layout/_item_profile.scss */
 .item-profile:first-child {
