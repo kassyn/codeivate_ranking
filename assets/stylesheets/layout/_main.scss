@@ -1,5 +1,6 @@
 body {
 	font-family: 'Droid Sans', sans-serif;
+	
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
 	@include resp( mobile ) {
 		padding: 0 20px;
 		width: 100%;
-	}	
+	} 
 }
 
 .list-profile {

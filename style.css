@@ -47,21 +47,21 @@ body {
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 5, assets/stylesheets/layout/_main.scss */
+/* line 6, assets/stylesheets/layout/_main.scss */
 .container {
   margin: 0 auto;
   padding: 0 40px;
   width: 80%;
 }
 @media (max-width: 768px) {
-  /* line 5, assets/stylesheets/layout/_main.scss */
+  /* line 6, assets/stylesheets/layout/_main.scss */
   .container {
     padding: 0 20px;
     width: 100%;
   }
 }
 
-/* line 16, assets/stylesheets/layout/_main.scss */
+/* line 17, assets/stylesheets/layout/_main.scss */
 .list-profile {
   min-height: 600px;
 }
