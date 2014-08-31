@@ -1,4 +1,4 @@
-Module("JEDAI.Ranking", function(Ranking) {
+Module('JEDAI.Ranking', function(Ranking) {
 	Ranking.TIME_RELOAD = ( 1 * 60 * 1000 );
 
 	Ranking.fn.initialize = function(container, users) {
@@ -18,8 +18,8 @@ Module("JEDAI.Ranking", function(Ranking) {
 	Ranking.fn.setTimeReload = function() {
 		this.interval = setInterval(
 			(function() {
-				this.getUsersInService();
 				console.log( 'reload page #' + this.interval );
+				this.getUsersInService();
 			}).bind(this)
 		    , Ranking.TIME_RELOAD
 		);
@@ -32,14 +32,14 @@ Module("JEDAI.Ranking", function(Ranking) {
 
 	Ranking.fn.getUsersInService = function() {
 		var promises = this.users.map(function(user) {
-			return JEDAI.User( user ).getCodeivateAPI();
+			return Ranking.FactoryUser( user ).getCodeivateAPI();
 		});
 
 		RSVP.all( promises )
 		    .then( this._thenPromiseAll.bind(this) )
 		    .catch( this._catchPromiseAll.bind(this) )
-		;    
-	};
+		;
+	};	
 
 	Ranking.fn._thenPromiseAll = function(users) {
 		this.users = users.sort(function(a, b) {
@@ -87,6 +87,10 @@ Module("JEDAI.Ranking", function(Ranking) {
 		return function(user) {
 			user[method].call(user);
 		};
+	};
+
+	Ranking.FactoryUser = function(instance) {
+		return ( instance instanceof JEDAI.User ) ? instance : JEDAI.User( instance );		
 	};
 
 	//easy compile template
