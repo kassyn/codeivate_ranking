@@ -183,33 +183,34 @@ body {
   position: absolute;
   text-shadow: 0 0 15px #000;
   top: 1px;
+  line-height: 1.3;
 }
-/* line 66, assets/stylesheets/layout/_item_profile.scss */
+/* line 67, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list {
   margin-top: 5px;
   font-size: 10px;
   text-transform: uppercase;
 }
-/* line 71, assets/stylesheets/layout/_item_profile.scss */
+/* line 72, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 75, assets/stylesheets/layout/_item_profile.scss */
+/* line 76, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item:first-child {
   margin-left: 0;
 }
-/* line 79, assets/stylesheets/layout/_item_profile.scss */
+/* line 80, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item span {
   font-weight: bold;
   color: #464e7c;
 }
 @media (max-width: 768px) {
-  /* line 88, assets/stylesheets/layout/_item_profile.scss */
+  /* line 89, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .list {
     display: none;
   }
-  /* line 92, assets/stylesheets/layout/_item_profile.scss */
+  /* line 93, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .level {
     font-size: 14px;
     margin-right: 10px;
