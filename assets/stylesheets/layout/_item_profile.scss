@@ -48,6 +48,7 @@
 		position: relative;
 
 		.progress {
+			@include transition( width .6s ease-out );
 			background: #464e7c;
 			height: 15px;
 			display: inline-block;

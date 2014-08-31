@@ -168,11 +168,15 @@ body {
 }
 /* line 50, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .progress-bar .progress {
+  -webkit-transition: width 0.6s ease-out;
+  -moz-transition: width 0.6s ease-out;
+  -o-transition: width 0.6s ease-out;
+  transition: width 0.6s ease-out;
   background: #464e7c;
   height: 15px;
   display: inline-block;
 }
-/* line 56, assets/stylesheets/layout/_item_profile.scss */
+/* line 57, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .progress-bar strong {
   color: #fff;
   left: 5px;
@@ -180,32 +184,32 @@ body {
   text-shadow: 0 0 15px #000;
   top: 1px;
 }
-/* line 65, assets/stylesheets/layout/_item_profile.scss */
+/* line 66, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list {
   margin-top: 5px;
   font-size: 10px;
   text-transform: uppercase;
 }
-/* line 70, assets/stylesheets/layout/_item_profile.scss */
+/* line 71, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 74, assets/stylesheets/layout/_item_profile.scss */
+/* line 75, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item:first-child {
   margin-left: 0;
 }
-/* line 78, assets/stylesheets/layout/_item_profile.scss */
+/* line 79, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item span {
   font-weight: bold;
   color: #464e7c;
 }
 @media (max-width: 768px) {
-  /* line 87, assets/stylesheets/layout/_item_profile.scss */
+  /* line 88, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .list {
     display: none;
   }
-  /* line 91, assets/stylesheets/layout/_item_profile.scss */
+  /* line 92, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .level {
     font-size: 14px;
     margin-right: 10px;
