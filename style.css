@@ -161,41 +161,51 @@ body {
   background: #eee;
   border-radius: 10px;
   color: #fff;
+  height: 15px;
   font-size: 10px;
   overflow: hidden;
+  position: relative;
 }
-/* line 48, assets/stylesheets/layout/_item_profile.scss */
+/* line 50, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .progress-bar .progress {
   background: #464e7c;
+  height: 15px;
   display: inline-block;
-  padding: 2px 10px;
 }
-/* line 55, assets/stylesheets/layout/_item_profile.scss */
+/* line 56, assets/stylesheets/layout/_item_profile.scss */
+.item-profile .progress-bar strong {
+  color: #fff;
+  left: 5px;
+  position: absolute;
+  text-shadow: 0 0 15px #000;
+  top: 1px;
+}
+/* line 65, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list {
   margin-top: 5px;
   font-size: 10px;
   text-transform: uppercase;
 }
-/* line 60, assets/stylesheets/layout/_item_profile.scss */
+/* line 70, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 64, assets/stylesheets/layout/_item_profile.scss */
+/* line 74, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item:first-child {
   margin-left: 0;
 }
-/* line 68, assets/stylesheets/layout/_item_profile.scss */
+/* line 78, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .list .item span {
   font-weight: bold;
   color: #464e7c;
 }
 @media (max-width: 768px) {
-  /* line 77, assets/stylesheets/layout/_item_profile.scss */
+  /* line 87, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .list {
     display: none;
   }
-  /* line 81, assets/stylesheets/layout/_item_profile.scss */
+  /* line 91, assets/stylesheets/layout/_item_profile.scss */
   .item-profile .level {
     font-size: 14px;
     margin-right: 10px;
