@@ -4,13 +4,27 @@
 
 	.title-header {
 		color: #fff;
-		font-size: 16px;
 		float: left;
-		line-height: 1;
+		font-size: 16px;
+		display: inline-block;
 		letter-spacing: 1px;
-		text-transform: uppercase;
+		line-height: 1;
+		margin-left: 30px;
 		position: relative;
-		top: 6px;
+		text-transform: uppercase;
+
+		&:before {
+			background: image-url( 'medal.svg' );
+			background-size: 100%;
+			content: '';
+			height: 25px;
+			position: absolute;
+			margin-top: 25px / 2 * -1;
+			margin-right: 10px;
+			right: 100%;
+			top: 50%;
+			width: 25px;
+		}
 	}
 
 	.icon-medal {
@@ -27,8 +41,6 @@
 
 	.buttons-git {
 		float: right;
-		position: relative;
-		top: 5px;
 
 		iframe {
 			margin-left: 10px;
@@ -37,9 +49,15 @@
 
 	@include resp( mobile ) {
 		background-size: cover;
+		text-align: center;
+
+		.title-header {
+			float: none;
+		}
 
 		.buttons-git {
-			display: none;
+			float: none;
+			margin-top: 20px;
 		}
 	}
 }

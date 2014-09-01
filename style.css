@@ -5,8 +5,8 @@
   border: 0;
   text-decoration: none;
   outline: none;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-/* line 26, assets/stylesheets/layout/_reset.scss */
+/* line 25, assets/stylesheets/layout/_reset.scss */
 ul,
 ol {
   list-style: none;
@@ -74,33 +74,45 @@ body {
 /* line 5, assets/stylesheets/layout/_header.scss */
 .header .title-header {
   color: #fff;
-  font-size: 16px;
   float: left;
-  line-height: 1;
+  font-size: 16px;
+  display: inline-block;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  line-height: 1;
+  margin-left: 30px;
   position: relative;
-  top: 6px;
+  text-transform: uppercase;
 }
 /* line 16, assets/stylesheets/layout/_header.scss */
+.header .title-header:before {
+  background: url('assets/images/medal.svg?1409588601');
+  background-size: 100%;
+  content: '';
+  height: 25px;
+  position: absolute;
+  margin-top: -12.5px;
+  margin-right: 10px;
+  right: 100%;
+  top: 50%;
+  width: 25px;
+}
+/* line 30, assets/stylesheets/layout/_header.scss */
 .header .icon-medal {
   float: left;
   margin-right: 15px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding-right: 10px;
 }
-/* line 22, assets/stylesheets/layout/_header.scss */
+/* line 36, assets/stylesheets/layout/_header.scss */
 .header .icon-medal svg {
   position: relative;
   top: 2px;
 }
-/* line 28, assets/stylesheets/layout/_header.scss */
+/* line 42, assets/stylesheets/layout/_header.scss */
 .header .buttons-git {
   float: right;
-  position: relative;
-  top: 5px;
 }
-/* line 33, assets/stylesheets/layout/_header.scss */
+/* line 45, assets/stylesheets/layout/_header.scss */
 .header .buttons-git iframe {
   margin-left: 10px;
 }
@@ -108,10 +120,16 @@ body {
   /* line 1, assets/stylesheets/layout/_header.scss */
   .header {
     background-size: cover;
+    text-align: center;
   }
-  /* line 41, assets/stylesheets/layout/_header.scss */
+  /* line 54, assets/stylesheets/layout/_header.scss */
+  .header .title-header {
+    float: none;
+  }
+  /* line 58, assets/stylesheets/layout/_header.scss */
   .header .buttons-git {
-    display: none;
+    float: none;
+    margin-top: 20px;
   }
 }
 
@@ -168,9 +186,9 @@ body {
 }
 /* line 50, assets/stylesheets/layout/_item_profile.scss */
 .item-profile .progress-bar .progress {
-  -webkit-transition: width 0.6s ease-out;
   -moz-transition: width 0.6s ease-out;
   -o-transition: width 0.6s ease-out;
+  -webkit-transition: width 0.6s ease-out;
   transition: width 0.6s ease-out;
   background: #464e7c;
   height: 15px;
