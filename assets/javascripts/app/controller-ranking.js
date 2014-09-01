@@ -1,5 +1,5 @@
 Module('JEDAI.Ranking', function(Ranking) {
-	Ranking.TIME_RELOAD = ( 1 * 60 * 1000 );
+	Ranking.TIME_RELOAD = ( 10 * 60 * 1000 );
 
 	Ranking.fn.initialize = function(container, users) {
 		this.container = container;
