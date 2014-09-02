@@ -1,5 +1,5 @@
 .item-profile {
-	border-top: 2px solid #eee;
+	border-top: 2px solid $colorLines;
 	padding: 20px 0;
 
 	&:first-child {
@@ -7,8 +7,8 @@
 	}
 
 	.avatar img {
-		border-radius: 100%;
-		box-shadow: 0 0 0 5px #fff, 0 0 0 6px #eee;
+		border-radius: $radiusAvatar;
+		box-shadow: 0 0 0 5px #fff, 0 0 0 6px $colorLines;
 		display: block;
 		float: left;
 		height: 60px;
@@ -21,14 +21,14 @@
 	}
 
 	.name {
-		color: #464e7c;
+		color: $colorTextProfile;
 		font: bold 12px/1 sans-serif;
 		margin-bottom: 10px;
 	}
 
 	.level {
-		border-right: 1px solid #eee;
-		color: #464e7c;
+		border-right: 1px solid $colorLines;
+		color: $colorTextProfile;
 		float: left;
 		font-size: 22px;
 		line-height: 60px;
@@ -39,8 +39,8 @@
 	}
 
 	.progress-bar {
-		background: #eee;
-		border-radius: 10px;
+		background: $colorBar;
+		border-radius: $radiusBar;
 		color: #fff;
 		height: 15px;
 		font-size: 10px;
@@ -49,13 +49,13 @@
 
 		.progress {
 			@include transition( width .6s ease-out );
-			background: #464e7c;
+			background: $colorProgress;
 			height: 15px;
 			display: inline-block;
 		}
 
 		strong {
-			color: #fff;
+			color: $colorTextPerc;
 			left: 5px;
 			position: absolute;
 			text-shadow: 0 0 15px #000;
@@ -79,7 +79,7 @@
 
 			span {
 				font-weight: bold;
-				color: #464e7c;
+				color: $colorTextProfile;
 			}
 		}
 	}
