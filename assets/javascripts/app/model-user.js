@@ -44,14 +44,16 @@ Module('JEDAI.User', function(User) {
 	};
 
 	User.fn.getLanguagesAvailable = function() {
-		var languages  = this.languages;
-		var availables = {};
+		var languages = {};
 
-		for ( var attr in languages ) {
-			( Math.floor( languages[attr].level ) && ( availables[attr] = languages[attr] ) );
-		}
-				
-		return availables;
+		Object.keys( this.languages ).filter(function(key) {
+			return ( Math.floor( this.languages[key].level ) );
+		}, this )
+		.forEach(function(key) {
+			languages[key] = this.languages[key];
+		}, this );
+
+		return languages;
 	};
 
 	User.fn._onSuccessAjax = function(resolve, data) {
