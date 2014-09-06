@@ -49,6 +49,8 @@
 
 		.progress {
 			@include transition( width .6s ease-out );
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
 			background: $colorProgress;
 			height: 15px;
 			display: inline-block;
