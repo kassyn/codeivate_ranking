@@ -16,13 +16,10 @@ Module('JEDAI.Ranking', function(Ranking) {
 	};
 
 	Ranking.fn.setTimeReload = function() {
-		this.interval = setInterval(
-			(function() {
-				console.log( 'reload page #' + this.interval );
-				this.getUsersInService();
-			}).bind(this)
-		    , Ranking.TIME_RELOAD
-		);
+		this.interval = setInterval(function() {
+			this.getUsersInService();
+			console.log( 'reload page #' + this.interval );
+		}.bind(this), Ranking.TIME_RELOAD );
 	};
 
 	Ranking.fn.clearTimeReload = function() {
@@ -62,7 +59,7 @@ Module('JEDAI.Ranking', function(Ranking) {
 	Ranking.fn.parseElementEachUsers = function() {
 		this.users.forEach(function(user) {
 			user.$el = this._getElementUserByName( user.getSanitizeText() );
-		}, this);
+		}, this );
 	};
 
 	Ranking.fn._getElementUserByName = function(name) {
