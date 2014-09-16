@@ -2,8 +2,14 @@ body {
 	font-family: 'Droid Sans', sans-serif;	
 }
 
-.container {
-	margin: 0 auto;
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.content {
+	display: inline-block;
+	margin-left: 20%;
 	padding: 0 40px;
 	width: 80%;
 

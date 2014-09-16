@@ -9,30 +9,27 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="header">
-		<div class="container">
-			<h1 class="title-header">Codeivate ranking</h1>
+	<div class="wrapper">		
+		<aside class="sidebar">
+			<div class="box">
+				<h1 class="title-header">Codeivate ranking</h1>
 
-			<div class="buttons-git">
-				<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
-				<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>				
-			</div>
+				<div class="buttons-git">
+					<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+					<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>				
+				</div>
+
+				<div class="about-team">
+					<p class="team-desc">
+						Made with love by <a href="https://twitter.com/wdguilherme" title="twitter of Guilherme Souza" class="member" target="_blank">@wdguilherme</a> and <a href="https://twitter.com/KassynFrank" title="twitter of Accácio Jasson Franklin" class="member" target="_blank">@kassynfrank</a>
+					</p>
+				</div>				
+			</div>		
+		</aside>
+
+		<div class="content list-profile" data-component-ranking>		
 		</div>
 	</div>
-
-	<div class="container list-profile" data-component-ranking>
-		
-	</div>
-
-	<footer class="footer">
-		<div class="container">
-			<div class="about-team">
-				<p class="team-desc">
-					Made with love by <a href="https://twitter.com/wdguilherme" title="twitter of Guilherme Souza" class="member" target="_blank">@wdguilherme</a> and <a href="https://twitter.com/KassynFrank" title="twitter of Accácio Jasson Franklin" class="member" target="_blank">@kassynfrank</a>
-				</p>
-			</div>
-		</div>
-	</footer>
 
 	<script id="template-items-profile" type="text/x-handlebars-template">
 		{{#each this}}
