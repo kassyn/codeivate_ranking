@@ -1,5 +1,5 @@
 .item-profile {
-	border-top: 2px solid $colorLines;
+	border-top: 1px solid $colorLines;
 	padding: 20px 0;
 
 	&:first-child {
@@ -27,7 +27,7 @@
 	}
 
 	.level {
-		border-right: 1px solid $colorLines;
+		border-right: 1px dotted $colorLines;
 		color: $colorTextProfile;
 		float: left;
 		font-size: 22px;
