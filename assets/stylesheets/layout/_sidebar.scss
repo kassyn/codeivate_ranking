@@ -44,4 +44,21 @@
 	.team-desc {
 		color: rgba( #fff, .6 );
 	}
+
+	@include resp( mobile ) {
+		position: static;
+		width: 100%;
+
+		.title-header {
+			margin-top: 0;
+			line-height: 30px;
+		}
+		.title-header:before {
+			position: static;
+			float: left;
+			margin-left: 0;
+			height: 30px;
+			width: 30px;
+		}
+	}
 }

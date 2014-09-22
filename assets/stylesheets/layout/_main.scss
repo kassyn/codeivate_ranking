@@ -14,9 +14,10 @@ body {
 	width: 80%;
 
 	@include resp( mobile ) {
+		margin-left: 0;
 		padding: 0 20px;
 		width: 100%;
-	} 
+	}
 }
 
 .list-profile {

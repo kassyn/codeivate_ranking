@@ -63,12 +63,13 @@ body {
 @media (max-width: 768px) {
   /* line 10, assets/stylesheets/layout/_main.scss */
   .content {
+    margin-left: 0;
     padding: 0 20px;
     width: 100%;
   }
 }
 
-/* line 22, assets/stylesheets/layout/_main.scss */
+/* line 23, assets/stylesheets/layout/_main.scss */
 .list-profile {
   min-height: 600px;
 }
@@ -122,6 +123,26 @@ body {
 /* line 44, assets/stylesheets/layout/_sidebar.scss */
 .sidebar .team-desc {
   color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 768px) {
+  /* line 1, assets/stylesheets/layout/_sidebar.scss */
+  .sidebar {
+    position: static;
+    width: 100%;
+  }
+  /* line 52, assets/stylesheets/layout/_sidebar.scss */
+  .sidebar .title-header {
+    margin-top: 0;
+    line-height: 30px;
+  }
+  /* line 56, assets/stylesheets/layout/_sidebar.scss */
+  .sidebar .title-header:before {
+    position: static;
+    float: left;
+    margin-left: 0;
+    height: 30px;
+    width: 30px;
+  }
 }
 
 /* line 1, assets/stylesheets/layout/_item_profile.scss */
