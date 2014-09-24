@@ -44,7 +44,11 @@ Module('JEDAI.Application', function(Application) {
 			{
 				profile : 'danielantunes',
 				email   : 'daniel.antunes.rocha@gmail.com'
-			}
+			},
+			{
+				profile : 'yagosilva',
+				email   : 'yago@apiki.com'
+			}			
 		];
 
 		//set users for ranking
