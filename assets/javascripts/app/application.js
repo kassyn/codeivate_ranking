@@ -51,7 +51,7 @@ Module('JEDAI.Application', function(Application) {
 			},
 			{
 				profile : 'guih',
-				email:  : 'guih@hotmail.com.br'
+				email   : 'guih@hotmail.com.br'
 			}			
 		];
 
