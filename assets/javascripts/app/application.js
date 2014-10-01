@@ -50,7 +50,7 @@ Module('JEDAI.Application', function(Application) {
 				email   : 'yago@apiki.com'
 			},
 			{
-				profile : 'guih',
+				profile : 'guihknx',
 				email   : 'guih@hotmail.com.br'
 			}			
 		];
