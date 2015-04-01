@@ -1,0 +1,63 @@
+.header {
+	background: image-url( 'bg.png', false, false ) no-repeat center top / 100% auto;
+	padding: 25px 0 20px;
+
+	.title-header {
+		color: #fff;
+		float: left;
+		font-size: 16px;
+		display: inline-block;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin-left: 30px;
+		position: relative;
+		text-transform: uppercase;
+
+		&:before {
+			background: image-url( 'medal.svg' );
+			background-size: 100%;
+			content: '';
+			height: 25px;
+			position: absolute;
+			margin-top: 25px / 2 * -1;
+			margin-right: 10px;
+			right: 100%;
+			top: 50%;
+			width: 25px;
+		}
+	}
+
+	.icon-medal {
+		float: left;
+		margin-right: 15px;
+		border-right: 1px solid rgba( #fff, .2 );
+		padding-right: 10px;
+
+		svg {
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	.buttons-git {
+		float: right;
+
+		iframe {
+			margin-left: 10px;
+		}
+	}
+
+	@include resp( mobile ) {
+		background-size: cover;
+		text-align: center;
+
+		.title-header {
+			float: none;
+		}
+
+		.buttons-git {
+			float: none;
+			margin-top: 20px;
+		}
+	}
+}

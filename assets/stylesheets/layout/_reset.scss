@@ -1,0 +1,34 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+	outline: none;
+	@include box-sizing(border-box);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+after, hgroup:after, nav:after, footer:after, header:after, section:after, div:after, ol:after, ul:after, li:after, dl:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
+
+a {	text-decoration: none; }
+
+ul,
+ol {
+	list-style: none;
+	list-style-position: outside;
+}
+
+
+body {
+	font-family: sans-serif;
+}

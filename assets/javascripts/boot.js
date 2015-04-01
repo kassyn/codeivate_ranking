@@ -1,0 +1,3 @@
+$(function() {
+	JEDAI.Application( $( 'body' ) );
+});

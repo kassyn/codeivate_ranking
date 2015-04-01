@@ -1,0 +1,25 @@
+body {
+	font-family: 'Droid Sans', sans-serif;	
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.content {
+	display: inline-block;
+	margin-left: 20%;
+	padding: 0 40px;
+	width: 80%;
+
+	@include resp( mobile ) {
+		margin-left: 0;
+		padding: 0 20px;
+		width: 100%;
+	}
+}
+
+.list-profile {
+	min-height: 600px;
+}

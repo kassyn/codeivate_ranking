@@ -1,0 +1,64 @@
+.sidebar {
+	background: $colorProgress;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 20%;
+
+	.title-header {
+		color: #fff;
+		font-size: 16px;
+		display: inline-block;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin-top: 200px;
+		position: relative;
+		text-transform: uppercase;
+
+		&:before {
+			@include box-sizing( border-box );
+			background: image-url( 'medal.svg' );
+			background-size: 100%;
+			content: '';
+			height: 80px;
+			margin-left: -40px;
+			position: absolute;
+			left: 50%;
+			bottom: 120%;
+			width: 80px;
+		}
+	}
+
+	.buttons-git {
+		margin: 30px 0;
+
+		iframe {
+			margin-left: 10px;
+		}
+	}	
+
+	.team-desc {
+		color: rgba( #fff, .6 );
+	}
+
+	@include resp( mobile ) {
+		position: static;
+		width: 100%;
+
+		.title-header {
+			margin-top: 0;
+			line-height: 30px;
+		}
+		.title-header:before {
+			position: static;
+			float: left;
+			margin-left: 0;
+			height: 30px;
+			width: 30px;
+		}
+	}
+}

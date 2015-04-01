@@ -1,0 +1,101 @@
+.item-profile {
+	border-top: 1px solid $colorLines;
+	padding: 20px 0;
+
+	&:first-child {
+		border-top: none;
+	}
+
+	.avatar img {
+		border-radius: $radiusAvatar;
+		box-shadow: 0 0 0 5px #fff, 0 0 0 6px $colorLines;
+		display: block;
+		float: left;
+		height: 60px;
+		margin-right: 20px;
+		width: 60px;
+	}
+
+	.info {
+		overflow: hidden;
+	}
+
+	.name {
+		color: $colorTextProfile;
+		font: bold 12px/1 sans-serif;
+		margin-bottom: 10px;
+	}
+
+	.level {
+		border-right: 1px dotted $colorLines;
+		color: $colorTextProfile;
+		float: left;
+		font-size: 22px;
+		line-height: 60px;
+		height: 60px;
+		overflow: hidden;
+		padding-right: 20px;
+		margin-right: 20px;
+	}
+
+	.progress-bar {
+		background: $colorBar;
+		border-radius: $radiusBar;
+		color: #fff;
+		height: 15px;
+		font-size: 10px;
+		overflow: hidden;
+		position: relative;
+
+		.progress {
+			@include transition( width .6s ease-out );
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			background: $colorProgress;
+			height: 15px;
+			display: inline-block;
+		}
+
+		strong {
+			color: $colorTextPerc;
+			left: 5px;
+			position: absolute;
+			text-shadow: 0 0 15px #000;
+			top: 1px;
+			line-height: 1.3;
+		}
+	}
+
+	.list {
+		margin-top: 5px;
+		font-size: 10px;
+		text-transform: uppercase;
+
+		.item {
+			display: inline-block;
+			margin-left: 10px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			span {
+				font-weight: bold;
+				color: $colorTextProfile;
+			}
+		}
+	}
+
+	@include resp( mobile ) {
+		
+		.list {
+			display: none;
+		}
+
+		.level {
+			font-size: 14px;
+			margin-right: 10px;
+			padding-right: 10px;
+		}
+	}
+}
