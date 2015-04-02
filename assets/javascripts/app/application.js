@@ -14,16 +14,8 @@ Module('JEDAI.Application', function(Application) {
 				email   : 'danilo.alves@apiki.com'
 			},
 			{
-				profile : 'henrichm',
-				email   : 'henrich@apiki.com'
-			},
-			{
 				profile : 'luanramos',
 				email   : 'luan@apiki.com'
-			},
-			{
-				profile : 'Emanuel-Souza',
-				email   : 'emanuel.inacios@gmail.com'
 			},
 			{
 				profile : 'Jhowl',
@@ -46,12 +38,12 @@ Module('JEDAI.Application', function(Application) {
 				email   : 'daniel.antunes.rocha@gmail.com'
 			},
 			{
-				profile : 'yagosilva',
-				email   : 'yago@apiki.com'
+				profile : 'elvishp2006',
+				email   : 'elvis.pereira@apiki.com'
 			},
 			{
-				profile : 'guihknx',
-				email   : 'guih@hotmail.com.br'
+				profile : 'filipe.lemos',
+				email   : 'contato@filipelemos.com'
 			}			
 		];
 
