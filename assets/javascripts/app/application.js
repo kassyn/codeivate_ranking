@@ -14,16 +14,8 @@ Module('JEDAI.Application', function(Application) {
 				email   : 'danilo.alves@apiki.com'
 			},
 			{
-				profile : 'henrichm',
-				email   : 'henrich@apiki.com'
-			},
-			{
 				profile : 'luanramos',
 				email   : 'luan@apiki.com'
-			},
-			{
-				profile : 'Emanuel-Souza',
-				email   : 'emanuel.inacios@gmail.com'
 			},
 			{
 				profile : 'Jhowl',
@@ -44,15 +36,7 @@ Module('JEDAI.Application', function(Application) {
 			{
 				profile : 'danielantunes',
 				email   : 'daniel.antunes.rocha@gmail.com'
-			},
-			{
-				profile : 'yagosilva',
-				email   : 'yago@apiki.com'
-			},
-			{
-				profile : 'guihknx',
-				email   : 'guih@hotmail.com.br'
-			}			
+			}					
 		];
 
 		//set users for ranking
