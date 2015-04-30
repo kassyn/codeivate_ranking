@@ -48,11 +48,7 @@ Module('JEDAI.Application', function(Application) {
 			{
 				profile : 'yagosilva',
 				email   : 'yago@apiki.com'
-			},
-			{
-				profile : 'guihknx',
-				email   : 'guih@hotmail.com.br'
-			}			
+			}		
 		];
 
 		//set users for ranking
