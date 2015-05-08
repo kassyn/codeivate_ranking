@@ -22,10 +22,6 @@ Module('JEDAI.Application', function(Application) {
 				email   : 'luan@apiki.com'
 			},
 			{
-				profile : 'Emanuel-Souza',
-				email   : 'emanuel.inacios@gmail.com'
-			},
-			{
 				profile : 'Jhowl',
 				email   : 'jhonatan.souza@apiki.com'
 			},
