@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <title>Codeivate ranking</title>
+    </head>
+    <body>
+		<div class="wrapper">
+			<div class="content list-profile" data-component-ranking>
+			</div>
+
+			<aside class="sidebar">
+				<div class="box">
+					<h1 class="title-header">Codeivate ranking</h1>
+
+					<div class="buttons-git">
+						<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+						<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+					</div>
+
+					<div class="about-team">
+						<p class="team-desc">
+							Made with love by <a href="https://twitter.com/wdguilherme" title="twitter of Guilherme Souza" class="member" target="_blank">@wdguilherme</a> and <a href="https://twitter.com/KassynFrank" title="twitter of Accácio Jasson Franklin" class="member" target="_blank">@kassynfrank</a>
+						</p>
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<script id="template-items-profile" type="text/x-handlebars-template">
+			{{#each this}}
+			<div class="item-profile" data-component-profile="{{getSanitizeText}}">
+				<figure class="avatar">
+					<img src="http://avatars.io/email/{{email}}?size=medium" alt="gravatar ">
+				</figure>
+				<span class="level">Level {{floor_value level}}</span>
+				<div class="info">
+					<h3 class="name">{{name}}</h3>
+					<div class="progress-bar">
+						<span class="progress" data-percentage style="width: {{lastRenderPercentage}}%;"></span>
+						<strong>{{getPercentageNextLevel}}%</strong>
+					</div>
+					<ul class="list">
+						{{#each getLanguagesAvailable}}
+							<li class="item">{{@key}} <span>{{floor_value level}}</span></li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+		</script>
+
+            <!-- libs -->
+		<script src="assets/javascripts/libs/zepto.js"></script>
+		<script src="assets/javascripts/libs/module.js"></script>
+		<script src="assets/javascripts/libs/rsvp.js"></script>
+		<script src="assets/javascripts/libs/handlebars.js"></script>
+
+		<!-- app -->
+		<script src="assets/javascripts/app/application.js"></script>
+		<script src="assets/javascripts/app/zepto-extend.js"></script>
+		<script src="assets/javascripts/app/controller-ranking.js"></script>
+		<script src="assets/javascripts/app/model-user.js"></script>
+		<script src="assets/javascripts/boot.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
