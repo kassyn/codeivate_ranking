@@ -1,6 +1,4 @@
-Codeivate Ranking
-=================
-
+# codeivate_ranking_app
 Usage for ranking in codeivate. API REST Consumed
 
-Ref. [Codeivate](http://www.codeivate.com/)
+PhoneGap Build: https://build.phonegap.com/apps/1446670/builds
