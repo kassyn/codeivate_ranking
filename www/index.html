@@ -29,43 +29,32 @@
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
         <title>Codeivate ranking</title>
-	    <script type="text/javascript" charset="utf-8">
-
-	    // Wait for device API libraries to load
-	    //
-	    document.addEventListener("deviceready", onDeviceReady, false);
-
-	    // device APIs are available
-	    //
-	    function onDeviceReady() {
-	        navigator.splashscreen.show();
-	    }
-
-	    </script>
     </head>
     <body>
-		<div class="wrapper">
-			<div class="content list-profile" data-component-ranking>
-			</div>
-
-			<aside class="sidebar">
-				<div class="box">
-					<h1 class="title-header">Codeivate ranking</h1>
-
-					<div class="buttons-git">
-						<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
-						<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
-					</div>
-
-					<div class="about-team">
-						<p class="team-desc">
-							Made with love by <a href="https://twitter.com/wdguilherme" title="twitter of Guilherme Souza" class="member" target="_blank">@wdguilherme</a> and <a href="https://twitter.com/KassynFrank" title="twitter of Accácio Jasson Franklin" class="member" target="_blank">@kassynfrank</a>
-						</p>
-					</div>
+		<div id="deviceready">
+			<p class="listening">Connecting to Device</p>
+			<div class="received wrapper">
+				<div class="content list-profile" data-component-ranking>
 				</div>
-			</aside>
-		</div>
 
+				<aside class="sidebar">
+					<div class="box">
+						<h1 class="title-header">Codeivate ranking</h1>
+
+						<div class="buttons-git">
+							<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+							<iframe src="http://ghbtns.com/github-btn.html?user=kassyn&repo=codeivate_ranking&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+						</div>
+
+						<div class="about-team">
+							<p class="team-desc">
+								Made with love by <a href="https://twitter.com/wdguilherme" title="twitter of Guilherme Souza" class="member" target="_blank">@wdguilherme</a> and <a href="https://twitter.com/KassynFrank" title="twitter of Accácio Jasson Franklin" class="member" target="_blank">@kassynfrank</a>
+							</p>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
 		<script id="template-items-profile" type="text/x-handlebars-template">
 			{{#each this}}
 			<div class="item-profile" data-component-profile="{{getSanitizeText}}">
@@ -103,6 +92,7 @@
 		<script src="assets/javascripts/boot.js"></script>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="assets/javascripts/app/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
